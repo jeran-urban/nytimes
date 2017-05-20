@@ -3,7 +3,6 @@ var React = require("react");
 var ReactDOM = require("react-dom");
 
 // Include the Header Component
-var Header = require("./components/Header");
 var Body = require("./components/Body");
 var Footer = require("./components/Footer");
 
