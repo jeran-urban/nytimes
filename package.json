@@ -2,7 +2,7 @@
   "name": "nyt-search",
   "version": "1.0.0",
   "description": "",
-  "main": "public/index.html",
+  "main": "server.js",
   "scripts": {
     "build": "webpack -w"
   },
