@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "author": "Jeran Urban",
+  "author": "Jeran Urban ",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.16.1",
