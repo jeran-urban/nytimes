@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "build": "webpack -w"
+    "build": "webpack -w",
+    "start": "node server.js"
   },
   "author": "Ahmed Haque",
   "license": "ISC",
