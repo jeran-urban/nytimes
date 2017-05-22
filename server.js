@@ -44,7 +44,7 @@ app.get("/", function(req, res) {
 
 // This is the route we will send GET requests to retrieve our most recent search data.
 // We will call this route the moment our page gets rendered
-var History = require("./models/History");
+var History = require("./models/history.js");
 app.get("/saved", function(req, res) {
 
   // We will find all the records, sort it in descending order, then limit the records to 5
