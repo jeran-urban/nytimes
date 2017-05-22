@@ -5,13 +5,13 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 
 // Require History Schema
-var History = require("./models/History");
+
 
 // Create Instance of Express
 var app = express();
 // Sets an initial port. We'll use this later in our listener
 var PORT = process.env.PORT || 3000;
-
+var History = require("./models/History");
 // Run Morgan for Logging
 app.use(logger("dev"));
 app.use(bodyParser.json());
