@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "prestart": "webpack -w",
+    "prestart": "npm install",
+    "build": "webpack -w",
     "start": "node server.js"
   },
   "author": "Ahmed Haque",
