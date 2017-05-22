@@ -11,7 +11,7 @@ var mongoose = require("mongoose");
 var app = express();
 // Sets an initial port. We'll use this later in our listener
 var PORT = process.env.PORT || 3000;
-var History = require("./models/History");
+
 // Run Morgan for Logging
 app.use(logger("dev"));
 app.use(bodyParser.json());
@@ -45,7 +45,7 @@ app.get("/", function(req, res) {
 // This is the route we will send GET requests to retrieve our most recent search data.
 // We will call this route the moment our page gets rendered
 app.get("/saved", function(req, res) {
-
+var History = require("./models/History");
   // We will find all the records, sort it in descending order, then limit the records to 5
   History.find({}).sort([
     ["date", "descending"]
